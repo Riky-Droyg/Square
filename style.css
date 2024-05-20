@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.description {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+
+
+
+.wrapper-cube {
+    position: relative;
+    margin: 200px auto;
+    width: 300px;
+    height: 300px;
+    perspective: 500px;
+}
+
+.cube {
+    width: inherit;
+    height: inherit;
+    transform-style: preserve-3d;
+}
+
+.cube__side {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    border: 5px solid #fff;
+    font: normal 70px Arial;
+    text-align: center;
+    line-height: 300px;
+    color: #fff;
+}
+
+.cube__side-front {
+    transform: translateZ(150px);
+}
+
+.cube__side-back {
+    transform: rotateY(180deg) translateZ(150px);
+}
+
+
+.cube__side-right {
+    transform: rotateY(90deg) translateZ(150px);
+}
+
+.cube__side-left {
+    transform: rotateY(-90deg) translateZ(150px);
+}
+
+.cube__side-top {
+    transform: rotateX(90deg) translateZ(150px);
+}
+
+.cube__side-bottom {
+    transform: rotateX(-90deg) translateZ(150px);
+}
+
+
+
